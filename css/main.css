@@ -1,0 +1,92 @@
+.button {
+  border-radius: 100px;
+  margin-top: 3rem;
+}
+
+.collapsed {
+  display: none;
+}
+
+.expanded {
+  display: block;
+}
+
+img.cover {
+  max-width: 80%;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section {
+  padding: 2rem 0 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.heading{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+article > p {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.image{
+  padding-bottom: 2rem;
+}
+
+.sidebar-box {
+  max-height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.read-more { 
+  position: relative; 
+  bottom: 30px;
+  left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; 
+  opacity: 0.88; 
+	
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, #fefefe, #f1f1f1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  section {
+    padding: 2rem 0 11rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  section {
+    padding: 4rem 0 15rem;
+  }
+  .heading{
+    padding-bottom: 2rem;
+  }
+  
+  .description {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  section {
+    padding: 8rem 0 19rem ;
+  }
+
+  .heading{
+    padding-bottom: 4rem;
+  }
+}
